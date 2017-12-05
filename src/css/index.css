@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.books-grid>span {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bookshelf-title {
+  color: #717171;
+}
+
+/* select */
+.Select-control {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.Select.Select--single,
+.book-shelf-changer {
+	cursor: pointer;
+}
+
+.Select-menu-outer {
+	min-width: 150px;
+	font-size: 13px;
+	left: -50px;
+}
+
+.Select-arrow-zone {
+  display: inline-block;
+  width: 50px;
+  left: -50px;
+}
+
+.Select-option {
+  background-color: #fff;
+  color: #666;
+}
+
+.Select-option.is-selected {
+  background-color: #f5faff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.04);
+  color: #333;
+}
+
+.Select-menu-outer *:hover {
+  background-color: initial;
+  color: #ccc;
+}
+
+.Select-option.is-focused {
+  background-color: initial;
+  /* Fallback color for IE 8 */
+  /*background-color: rgba(255, 255, 255, 1);*/
+  color: #666;
+}
+
+.Select-option.is-selected.is-focused {
+  background-color: #f5faff;  
+}
+
+/*animation*/
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
